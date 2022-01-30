@@ -3,38 +3,40 @@
 
 @import "{{ site.theme }}";
 
-.page-content{
-    display: flex;
-    /* flex-wrap: wrap; */
-    width: 1000px;
-    margin: 0px auto;
-    /* border: solid 5px black; */
-}
-
 .wrapper{
-    margin: 0px;
-    width: 85%;
+    width: 50%;
 }
 
-.page-content .page-index{
+.page-container{
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+.page-container .index{
+    font-family: 'Times New Roman', Times, serif;
     /* width: 300px; */
     /* margin: 0px auto; */
     display: inline-block;
     border-right: dashed 1px #AAA;
-    width: 12%;
-    padding-top: 25%;
-    margin-right: 3%;
+    width: 32%;
+    margin-right: 2%;
     font-size: 20px;
 }
 
-.page-content ul{
+.page-container ul{
     list-style-type: none;
+    line-height: 300%;
     margin: 0px;
     padding: 0px;
 }
 
-.page-content ul li a{
+.page-container ul li a{
     color: #555;
+}
+
+.page-container .content{
+    width: auto;
 }
 
 .project-card{
