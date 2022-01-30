@@ -3,11 +3,130 @@
 
 @import "{{ site.theme }}";
 
-h1 {
-  color: #ff0000
+.page-content{
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 1000px;
+    margin: 0px auto;
+    /* border: solid 5px black; */
 }
 
-.project-thumbnail {
-  width: 100px;
-  height: 100px;
+.wrapper{
+    margin: 0px;
+    width: 85%;
+}
+
+.page-content .page-index{
+    /* width: 300px; */
+    /* margin: 0px auto; */
+    display: inline-block;
+    border-right: dashed 1px #AAA;
+    width: 12%;
+    padding-top: 25%;
+    margin-right: 3%;
+    font-size: 20px;
+}
+
+.page-content ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page-content ul li a{
+    color: #555;
+}
+
+.project-card{
+    display: flex;
+    /* background-color: #EEE; */
+    /* flex-wrap: wrap; */
+}
+
+.project-card:not(:last-child){
+    margin-bottom: 50px;
+}
+
+.project-card .bullet-point{
+    font-weight: bold;
+    vertical-align: text-top;
+    font-size: 40px;
+    line-height: 100%;
+    margin-right: 10px;
+}
+
+.project-card h1, p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.project-card .header{
+    margin-bottom: 15px;
+}
+
+.project-card .header .project-title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #000;
+}
+
+.project-card .header .project-title:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #0000FF;
+}
+
+.project-card .header .info{
+    display: flex;
+    margin-left: 5px;
+    /* background-color: #AAA; */
+}
+
+.project-card .header-tag{
+    font-style: italic;
+    
+    color: #555;
+    padding-right: 8px;
+}
+
+.project-card .header-tag:not(:last-child){
+    border-right: 1px dashed #000;
+}
+
+.project-card .header-tag:not(:first-child){
+    margin-left: 8px;
+}
+
+.project-card .header .info a{
+    color: #555;
+    text-decoration: underline;
+}
+
+.project-card .header .info a:hover{
+    color: #0000FF;
+}
+
+.project-card .content{
+    display: flex;
+    line-height: normal;
+    margin-left: 15px;
+    /* background-color: #DDD; */
+    height: 150px;
+}
+
+.project-card .content .thumbnail{
+    height: 100%;
+    margin-right: 15px;
+}
+
+.project-card .content p{
+    text-align: justify;
+}
+
+.project-card .content a{
+    color: #0000FF;
+}
+
+h3 {
+    color: white;
 }
