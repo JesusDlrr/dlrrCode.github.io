@@ -4,7 +4,7 @@
 @import "{{ site.theme }}";
 
 .download-bar{
-    background-image: linear-gradient(#333 20%, #222);
+    background-image: linear-gradient(#444 20%, #222);
 }
 
 #container{
@@ -24,24 +24,62 @@
 .page-header{
     display: grid;
     box-shadow: 0px 0px 5px 1px #888888;
-    background-image: url('../images/aya.png');
+    background-image: url('../assets/images/aya.png');
     background-size: 100%;
-    background-position-y: -270px;
-    background-position-x: 330px;
+    background-position-y: -78%;
+    background-position-x: -38vw;
 
 }
 
 .page-header .gradient{
+    /* display: flex; */
     height: 100%;
     width: 100%;
+    /* padding-bottom: 3%; */
+    /* padding-top: 3%; */
     background-image: linear-gradient(to right, #FFF 40%, rgba(255, 255, 255, 0));
+}
+
+.section-info{
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.page-header .section-info .section-marker{
+    display: flex;
+    /* height: 100%; */
+    /* color: #FFF; */
+    /* background-color: chartreuse; */
+    /* background-color: chartreuse; */
+    /* vertical-align: middle; */
+}
+
+.arrow{
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    /* object-fit: fill; */
+    background-image: url("../assets/images/arrow.png");
+    background-size: 100%;
+    /* font-size: 36px; */
+    /* border-radius: 50%; */
+    /* background-color: #000; */
 }
 
 .page-header h1{
     margin: 0px;
-    padding: 30px 0px 30px 40px;
+    /* padding: 30px 0px 30px 40px; */
     color: #000;
+    /* line-height: 50%; */
+    padding-left: 1%;
+    padding-right: 1%;
+    /* vertical-align: middle; */
     /* background-color: #0000FF; */
+}
+
+.page-header h1:first-child{
+    padding-left: 3%;
 }
 
 .page-container{
@@ -57,7 +95,7 @@
     /* display: inline-block; */
     border-right: dashed 1px #888;
     color: #666;
-    width: 40%;
+    width: 20%;
     line-height: 200%;
     /* padding-right: 2% ; */
     margin-right: 2%;
@@ -95,7 +133,7 @@
 }
 
 .page-container .content{
-    width: auto;
+    width: 100%;
 }
 
 .project-card{
@@ -167,7 +205,7 @@
     color: #0000FF;
 }
 
-.project-card .content{
+.project-card .body{
     display: flex;
     line-height: normal;
     margin-left: 15px;
@@ -175,19 +213,27 @@
     height: 150px;
 }
 
-.project-card .content .thumbnail{
+.project-card .body .thumbnail{
     height: 100%;
     margin-right: 15px;
 }
 
-.project-card .content p{
+.project-card .body p{
     text-align: justify;
 }
 
-.project-card .content a{
+.project-card .body a{
     color: #0000FF;
 }
 
 h3 {
     color: white;
 }
+
+.date-tag{
+    color: #888;
+    font-style: italic;
+    border-bottom: 1px dashed #888;
+    margin-bottom: 20px;
+}
+
