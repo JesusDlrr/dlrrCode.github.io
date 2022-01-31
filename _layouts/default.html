@@ -15,99 +15,110 @@
 
   {% include head-custom.html %}
 </head>
+  
 <body>
-  <!-- <div class="page-con/tent"> -->
-    <div class="wrapper">
-      <header>
-        <h1>Rod's Portfolio: Projects</h1>
+  <div class="wrapper">
+    <header class="page-header">
+      <!-- <img class="banner" src="assets/images/aya.png"> -->
+      <div class="gradient">
+        <h1>Rod's Portfolio > My Projects > Games</h1>
+      </div>
         <!--h1 class="title">Welcome to my portfolio<-->
-      </header>
-        <div id="container"> <!--------------------THIS IS GRAY----------------------->
-          <!--p class="tagline"></p-->
-          <div id="main" role="main">
-            <div class="download-bar">
-              <div class="inner">
-                <h3>Here are some games I've developed</h3>
-                <!-- <a href="https://github.com/dlrrCode/dlrrCode.github.io" class="code">View Welcome to my portfolio on GitHub</a> -->
-              </div>
-              <span class="blc"></span><span class="trc"></span>
+    </header>
+      <div id="container">
+        <!--p class="tagline"></p-->
+        <div id="main" role="main">
+          <div class="download-bar">
+            <div class="inner">
+              <h3>Here are some games I've developed</h3>
+              <!-- <a href="https://github.com/dlrrCode/dlrrCode.github.io" class="code">View Welcome to my portfolio on GitHub</a> -->
             </div>
-            <div class="page-container">
-              <article class="index">
+            <span class="blc"></span><span class="trc"></span>
+          </div>
+          <div class="page-container">
+            <article class="index">
+              <ul class="aa">
+                Index
                 <ul>
-                  <li><a>Home page</a></li>
-                  <li><a>My projects</a></li>
-                  <li><a>About me</a></li>
+                  <li><a href="home.html">Home page</a></li>
+                  <li>
+                    My projects
+                    <ul>
+                      <li class="item-selected"><a>Games</a></li>
+                      <li><a>Music</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="about.html">About me</a></li>
                 </ul>
-              </article>
-              <article class="content">
-                <div class="project-card">
-                  <!-- <div class="bullet-point"> > </div> -->
-                  <div>
-                    <div class="header">
-                      <a class="project-title" href="https://gamejolt.com/games/no_connection/637485" target="_blank">NO CONNECTION</a>
-                      <div class="info">
-                        <p class="header-tag">Realease: Aug 9th, 2021</p>
-                        <p class="header-tag">Engine: <a href="https://www.yoyogames.com/en/gamemaker" target="_blank">GameMaker Studio 2</a></p>
-                      </div>
-                    </div>
-                    <div class="content"> 
-                      <img class="thumbnail" src="assets/images/no_connection.png"/> 
-                      <p class="description">
-                        NO CONNECTION is a game created for the <a href="https://gamejolt.com/c/gamemaker/ogxgj" target="_blank">OperaGx Game Jam</a>.
-                        Featuring an arcade-like gameplay and a 2 player co-op mode, It was designed to run on web browsers
-                        and was entirely made with GameMaker Studio 2, using It's HTML export module.
-                      </p>
+              </ul>
+            </article>
+            <article class="content">
+              <div class="project-card">
+                <!-- <div class="bullet-point"> > </div> -->
+                <div>
+                  <div class="header">
+                    <a class="project-title" href="https://gamejolt.com/games/no_connection/637485" target="_blank">NO CONNECTION</a>
+                    <div class="info">
+                      <p class="header-tag">Realease: Aug 9th, 2021</p>
+                      <p class="header-tag">Engine: <a href="https://www.yoyogames.com/en/gamemaker" target="_blank">GameMaker Studio 2</a></p>
                     </div>
                   </div>
+                  <div class="content"> 
+                    <img class="thumbnail" src="assets/images/no_connection.png"/> 
+                    <p class="description">
+                      NO CONNECTION is a game created during the <a href="https://gamejolt.com/c/gamemaker/ogxgj" target="_blank">OperaGx Game Jam</a>.
+                      Featuring an arcade-like gameplay and a 2 player co-op mode, It was designed to run on web browsers
+                      and was entirely made with GameMaker Studio 2, using It's HTML export module.
+                    </p>
+                  </div>
                 </div>
+              </div>
 
-                <div class="project-card">
-                  <!-- <div class="bullet-point"> > </div> -->
-                  <div>
-                    <div class="header">
-                      <h1 class="project-title">Project name</h1>
-                      <div class="info">
-                        <p class="release-date">Realease: January 1st, 2000</p>
-                        <a class="header-tag" href="https://www.yoyogames.com/en/gamemaker" target="_blank">Engine: GameMaker Studio 2</a>
-                      </div>
-                    </div>
-                    <div class="content"> 
-                      <img class="thumbnail" src="assets/images/aya.png"/> 
-                      <p class="description">Project description... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus vitae repudiandae minima necessitatibus dicta alias aperiam id deserunt nulla quisquam! Culpa soluta nihil aut. Veritatis nobis asperiores esse minima aliquid?</p>
+              <div class="project-card">
+                <!-- <div class="bullet-point"> > </div> -->
+                <div>
+                  <div class="header">
+                    <h1 class="project-title">Project name</h1>
+                    <div class="info">
+                      <p class="release-date">Realease: January 1st, 2000</p>
+                      <a class="header-tag" href="https://www.yoyogames.com/en/gamemaker" target="_blank">Engine: GameMaker Studio 2</a>
                     </div>
                   </div>
+                  <div class="content"> 
+                    <img class="thumbnail" src="assets/images/aya.png"/> 
+                    <p class="description">Project description... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus vitae repudiandae minima necessitatibus dicta alias aperiam id deserunt nulla quisquam! Culpa soluta nihil aut. Veritatis nobis asperiores esse minima aliquid?</p>
+                  </div>
                 </div>
+              </div>
 
-                <div class="project-card">
-                  <!-- <div class="bullet-point"> > </div> -->
-                  <div>
-                    <div class="header">
-                      <h1 class="project-title">Project name</h1>
-                      <div class="info">
-                        <p class="release-date">Realease: January 1st, 2000</p>
-                        <a class="header-tag" href="https://www.yoyogames.com/en/gamemaker" target="_blank">Engine: GameMaker Studio 2</a>
-                      </div>
-                    </div>
-                    <div class="content"> 
-                      <img class="thumbnail" src="assets/images/aya.png"/> 
-                      <p class="description">Project description... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus vitae repudiandae minima necessitatibus dicta alias aperiam id deserunt nulla quisquam! Culpa soluta nihil aut. Veritatis nobis asperiores esse minima aliquid?</p>
+              <div class="project-card">
+                <!-- <div class="bullet-point"> > </div> -->
+                <div>
+                  <div class="header">
+                    <h1 class="project-title">Project name</h1>
+                    <div class="info">
+                      <p class="release-date">Realease: January 1st, 2000</p>
+                      <a class="header-tag" href="https://www.yoyogames.com/en/gamemaker" target="_blank">Engine: GameMaker Studio 2</a>
                     </div>
                   </div>
+                  <div class="content"> 
+                    <img class="thumbnail" src="assets/images/aya.png"/> 
+                    <p class="description">Project description... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus vitae repudiandae minima necessitatibus dicta alias aperiam id deserunt nulla quisquam! Culpa soluta nihil aut. Veritatis nobis asperiores esse minima aliquid?</p>
+                  </div>
                 </div>
-              </article>
-            </div>
+              </div>
+            </article>
           </div>
         </div>
-      <footer>
-        <div class="owner">
-          <p><a href="https://github.com/dlrrCode" class="avatar"><img src="Welcome%20to%20GitHub%20Pages%20[%E2%80%9CWelcome%20to%20my%20portfolio%E2%80%9D]_files/dlrrCode.png" width="48" height="48"></a>View <a href="https://github.com/dlrrCode">dlrrCode</a> on <a href="https://www.github.com/">GitHub</a></p>
-        </div>
-        <div class="creds">
-          <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
-        </div>
-      </footer>
-    </div>
-  <!-- </div> -->
+      </div>
+    <footer>
+      <div class="owner">
+        <p><a href="https://github.com/dlrrCode" class="avatar"><img src="Welcome%20to%20GitHub%20Pages%20[%E2%80%9CWelcome%20to%20my%20portfolio%E2%80%9D]_files/dlrrCode.png" width="48" height="48"></a>Check out <a href="https://github.com/dlrrCode" target="_blank">my GitHub</a></p>
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
