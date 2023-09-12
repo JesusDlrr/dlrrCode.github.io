@@ -1,0 +1,15 @@
+@import '../../vars.css';
+
+.a {
+    border: solid 1px black;
+}
+
+.b {
+    width: 30px;
+    height: 30px;
+}
+
+.c {
+    border: solid 1px black;
+    display: flex;
+}
