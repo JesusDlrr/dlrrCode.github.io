@@ -1,23 +1,33 @@
 import React from "react";
+import styles from './Navbar.module.css';
+import { useLocation } from "react-router-dom";
 
 export const Navbar = () => {
+    const {pathname} = useLocation();
+
     return (
-        <navbar>
-            <ul>
-                Index
+        <>
+            <nav>
                 <ul>
-                    <li><a href="home.html">Home page</a></li>
                     <li>
-                        My projects
+                        Index
+                    </li>
+                    <li>
                         <ul>
-                            <li><a href="#">Programs</a></li>
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Music</a></li>
+                            <li className={pathname == '/' ? styles.selected : undefined}><a href="/dlrrCode.github.io/">Home page</a></li>
+                            <li>
+                                My projects
+                                <ul>
+                                    <li className={pathname == 'projects/software' ? styles.selected : undefined}><a href="/dlrrCode.github.io/projects/software">Software</a></li>
+                                    {/* <li className={pathname == '/projects/games' ? styles.selected : undefined}><a href="/projects/games">Games</a></li> */}
+                                    {/* <li className={pathname == '/projects/music' ? styles.selected : undefined}><a href="/projects/music">Music</a></li> */}
+                                </ul>
+                            </li>
+                            <li className={pathname == 'about' ? styles.selected : undefined}><a href="/dlrrCode.github.io/about">About me</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">About me</a></li>
                 </ul>
-            </ul>
-        </navbar>
+            </nav>
+        </>
     );
 }
